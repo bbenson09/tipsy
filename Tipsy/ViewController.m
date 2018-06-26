@@ -69,7 +69,13 @@
     [UIView animateWithDuration:0.2 animations:^{
         
         self.mealBillField.frame = newFrame;
+        
+    }];
+    
+    [UIView animateWithDuration: 1 animations:^ {
         self.tipLabel.alpha = 1;
+        
+        
     }];
     
 }
