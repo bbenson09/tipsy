@@ -90,6 +90,7 @@
     
     self.tipControl.selectedSegmentIndex = defaultIndex;
     
+    // More hacky than I would like
     [self onEdit:nil];
     
 }
