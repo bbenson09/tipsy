@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0129287D20E2FF52007480D6 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0129287C20E2FF52007480D6 /* SettingsViewController.m */; };
 		0186B64120E2D6A900C7A204 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0186B64020E2D6A900C7A204 /* AppDelegate.m */; };
 		0186B64420E2D6A900C7A204 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0186B64320E2D6A900C7A204 /* ViewController.m */; };
 		0186B64720E2D6A900C7A204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0186B64520E2D6A900C7A204 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0129287B20E2FF52007480D6 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		0129287C20E2FF52007480D6 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		0186B63C20E2D6A900C7A204 /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0186B63F20E2D6A900C7A204 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0186B64020E2D6A900C7A204 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				0186B64A20E2D6A900C7A204 /* LaunchScreen.storyboard */,
 				0186B64D20E2D6A900C7A204 /* Info.plist */,
 				0186B64E20E2D6A900C7A204 /* main.m */,
+				0129287B20E2FF52007480D6 /* SettingsViewController.h */,
+				0129287C20E2FF52007480D6 /* SettingsViewController.m */,
 			);
 			path = Tipsy;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				0186B64420E2D6A900C7A204 /* ViewController.m in Sources */,
 				0186B64F20E2D6A900C7A204 /* main.m in Sources */,
 				0186B64120E2D6A900C7A204 /* AppDelegate.m in Sources */,
+				0129287D20E2FF52007480D6 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

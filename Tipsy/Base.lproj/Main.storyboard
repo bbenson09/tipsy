@@ -58,7 +58,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02e-iU-lZn">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02e-iU-lZn">
                                 <rect key="frame" x="162" y="92" width="197" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -91,7 +91,13 @@
                             <outletCollection property="gestureRecognizers" destination="j8B-2t-JZp" appends="YES" id="aTw-cG-AVF"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tips" id="a8Q-P0-oj9"/>
+                    <navigationItem key="navigationItem" title="Tips" id="a8Q-P0-oj9">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="DFf-xd-LHb">
+                            <connections>
+                                <segue destination="Ydy-lL-VsK" kind="show" id="hZi-NU-rDE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mealBillField" destination="02e-iU-lZn" id="K6O-ny-ktr"/>
                         <outlet property="tipControl" destination="YCA-1s-il8" id="QZy-nB-Pgy"/>
@@ -107,6 +113,45 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Xza-9L-2mI">
+            <objects>
+                <viewController id="Ydy-lL-VsK" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yaA-JS-vZT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouR-rX-Hqx">
+                                <rect key="frame" x="43" y="106" width="176" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rLZ-yo-XZw">
+                                <rect key="frame" x="43" y="135" width="278" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                    <segment title="22%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onEdit:" destination="Ydy-lL-VsK" eventType="valueChanged" id="hzx-7b-vMj"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2vX-Q8-M7n"/>
+                    </view>
+                    <connections>
+                        <outlet property="defaultTipControl" destination="rLZ-yo-XZw" id="jyh-j5-Sb8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vO-Hb-ghF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MUs-bl-lvV">
